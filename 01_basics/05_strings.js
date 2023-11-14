@@ -34,7 +34,7 @@
 
 //NOTE: we can access and use the properties and method of string object in primitive string literals
 
-let fName="prithvi pratap";
+// let fName="prithvi pratap";
 // console.log(fName.__proto__);
 
 
@@ -44,7 +44,7 @@ let fName="prithvi pratap";
 // console.log(fName.toLocaleUpperCase()); 
 // console.log(fName.toUpperCase());
 // console.log(fName.charAt(4));
-console.log(fName.indexOf('t',5)) //argument1:string to search,argument2:index no. from which search starts, if arg2 vacant then search will start from beginning
+// console.log(fName.indexOf('t',5)) //argument1:string to search,argument2:index no. from which search starts, if arg2 vacant then search will start from beginning
 
 
 // const strTurkish = "İstanbul";
@@ -52,10 +52,21 @@ console.log(fName.indexOf('t',5)) //argument1:string to search,argument2:index n
 // console.log(strTurkish.toLowerCase());        // Output: "i̇stanbul"
 // console.log(strTurkish.toLocaleLowerCase());  // Output: "istanbul" (based on locale)
 
+// let newString="pratap"
+// let anotherString=newString.substring(0,4) //if the starting index> ending index => swaps the indexes
+// //eg. .substring(6,0)=>.substring(0,6);
+// console.log(anotherString)
+// // console.log(newString.length)
+
+// anotherString=newString.slice(-4,4)// we can provide -values.(count the negative values from index 0)
+// //if the startin
+// console.log(anotherString)
 
 
+const str = "pratap";
 
-
+const sliced = str.slice(-10, 5);
+console.log(sliced);
 
 
 
