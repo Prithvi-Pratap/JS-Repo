@@ -53,24 +53,57 @@
 // console.log(strTurkish.toLocaleLowerCase());  // Output: "istanbul" (based on locale)
 
 // let newString="pratap"
+
 // let anotherString=newString.substring(0,4) //if the starting index> ending index => swaps the indexes
+
 // //eg. .substring(6,0)=>.substring(0,6);
+
 // console.log(anotherString)
 // // console.log(newString.length)
 
 // anotherString=newString.slice(-4,4)// we can provide -values.(count the negative values from index 0)
-// //if the startin
+
 // console.log(anotherString)
 
 
-const str = "pratap";
 
-const sliced = str.slice(-10, 5);
-console.log(sliced);
+//slice method
+//If indexStart >= str.length, an empty string is returned.
+
+// const str = "pratap";
+
+// const sliced = str.slice(2, -5); //op:empty string
+
+// console.log(str.length)
+// console.log(sliced)
 
 
 
+//eval() function: is used to execute js code passed as string to eval(), eval() expects primitive string as i/p, but if we provide string object it will return the string object;
+// string object can be converted to its primitive counter part using valueof() method
+
+// const s1 = "2 + 2"; // creates a string primitive
+// const s2 = new String("2 + 2"); // creates a String object
+// console.log(eval(s1)); // returns the number 4
+// console.log(eval(s2)); // returns the string "2 + 2"
+// console.log(eval(s2.valueOf()));
 
 
+// .trim() : it removes the white spaces , tabs from the both the ends of the string. it doesn't modify the original string , it returns the new string with the whitespaces removed
+
+const name="   prithvi pratap   "; //note: it doesn't remove the whitespace within the string
+// console.log(name.trim());
 
 
+//inorder to remove all the white spaces we can use replace() method
+
+// .replace(): it replaces the specific substring or pattern from the string with specified substring or value
+
+// console.log(name.replace(/\s+/g,"")); //  /\s/ is a regular expression that matches any whitespace character, + is a quantifier that means "one or more occurrences.
+
+// console.log(name.replace('pra','tap'))
+
+
+//eg 2:
+const url="https://pratap.com/prithvi%20pratap/"
+console.log(url.replace('%20','-')); // replaces %20 with -
