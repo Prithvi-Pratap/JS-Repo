@@ -91,7 +91,7 @@
 
 // .trim() : it removes the white spaces , tabs from the both the ends of the string. it doesn't modify the original string , it returns the new string with the whitespaces removed
 
-const name="   prithvi pratap   "; //note: it doesn't remove the whitespace within the string
+// const name="   prithvi pratap   "; //note: it doesn't remove the whitespace within the string
 // console.log(name.trim());
 
 
@@ -105,5 +105,16 @@ const name="   prithvi pratap   "; //note: it doesn't remove the whitespace with
 
 
 //eg 2:
-const url="https://pratap.com/prithvi%20pratap/"
-console.log(url.replace('%20','-')); // replaces %20 with -
+// const url="https://pratap.com/prithvi%20pratap/"
+// console.log(url.replace('%20','-')); // replaces %20 with -
+
+
+// .includes() : return true or false based on the substring present or not
+
+const name= "honey-prithvi-pratap" 
+console.log(name.includes('prith')) // return true or false
+
+
+// .split() : splits into substrings and return a array of the splited values
+
+console.log(name.split('-'))
