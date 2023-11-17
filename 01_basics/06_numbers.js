@@ -39,4 +39,4 @@ const num=balance.valueOf();
 const anotherNum=(12345.6789).toPrecision(3);
 console.log(anotherNum)
 console.log(parseFloat(anotherNum));
-console.log(parseFloat(num));
+console.log(parseFloat(num));fadf
