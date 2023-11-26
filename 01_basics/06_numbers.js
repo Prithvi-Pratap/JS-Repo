@@ -31,8 +31,8 @@ const num=balance.valueOf();
 
 //*parseFloat(); returns a floating point number , convert the string in floating point format, it is the global function of JS, ignores the string inserted;
 
-// console.log(parseFloat("546.336"));
-// console.log(typeof parseFloat('1234abcfgsadgd'))
+console.log(parseFloat("546.336"));
+console.log(typeof parseFloat('1234abcfgsadgd'))
 
 
 // //*5. toPrecision(): returns a string, with a number written with specified length. //leads to error, significant difference in original value...the parameter value must be between 1 and 21
