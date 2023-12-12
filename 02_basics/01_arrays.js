@@ -96,7 +96,64 @@ number.splice(2,0,'a','b','c');
 
 //replacing elements:
 const colors=['black','red','olive','orange'];
-console.log("original:",colors)
+// console.log("original:",colors)
 let spliceColors=colors.splice(1,1,'yellow');
-console.log("replaced:",colors);
-console.log("spliced colors:",spliceColors)
+// console.log("replaced:",colors);
+// console.log("spliced colors:",spliceColors)
+
+//----------------------------------------------------
+
+
+//7.concat():combines two arrays and returns a new array; does not modify the original array
+
+let marvelHeros=['thor','ironman','hulk'];
+let dcHeros=['superman','batman','flash'];
+
+let allHeros=marvelHeros.concat(dcHeros);
+// console.log("allHeros:",allHeros)
+
+
+//8.spread operator (...array1,...array2):combines two or more arrays and returns a new array
+allHeros=[...marvelHeros,...dcHeros]
+// console.log("allHeros:",allHeros)
+
+
+//9.flat(depth):flatten an array by one level. it returns a new array with all the subarray concatinated into it upto the specified depth. by default the depth is 1. If you want to flatten the array entirely, you can use Infinity as the depth
+const nestedArray=[1,2,3,[4,5],6,7,[8,[9,10]]];
+const flattenArray=nestedArray.flat(Infinity)
+// console.log("nestedArray:",nestedArray);
+// console.log("flattenArray:",flattenArray);
+
+
+
+//10.from(): this is a static function,it can be invoked via constructor call(i.e. using 'Array' keyword). it creates a new , shallow copied array from an array-like or iteratable object. The primary function of the `Array.from()`is to convert objects that are not actual arrays into arrays
+
+//syntax: Array.from(arrayLike[,mapFunction[,thisArg]]);
+
+//arrayLike: iteratable object to convert to an array
+//mapFunction: (optional) mapping function that can  be applied to each element of the array
+//thisArg: (optional)an optional object to use as  `this` when executing the `mapFunction`;
+
+const str="hello";
+const charArray=Array.from(str);
+// console.log(charArray) //from is used to convert string into an array of its characters
+
+//create an array from an iteratable
+
+const iterable=new Set([1,2,3])
+const newArr=Array.from(iterable);
+// console.log(newArr)
+
+//----------------------------------------
+
+
+//11.of():it is a static method. it is used to create a new array of variable number of arguments, i.e. it can create a array from a set of values
+//syntax: Array.of(element1, element2,element3,...)
+
+let num1=100;
+let num2=200;
+let num3=300;
+let newStr='honey';
+
+const myarr=Array.of(num1, num2, num3,newStr);
+console.log(myarr);
